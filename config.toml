@@ -15,16 +15,16 @@ insert = "bar"
 
 [keys.normal]
 # Shift+hjkl to extend selections.
-J = ["select_mode", "extend_line_down",  "normal_mode"]
-K = ["select_mode", "extend_line_up",    "normal_mode"]
-H = ["select_mode", "extend_char_left",  "normal_mode"]
-L = ["select_mode", "extend_char_right", "normal_mode"]
+J = "extend_line_down"
+K = "extend_line_up"
+H = "extend_char_left"
+L = "extend_char_right"
 
 # Shift+arrows to extend selections.
-S-down  = ["select_mode", "extend_line_down",  "normal_mode"]
-S-up    = ["select_mode", "extend_line_up",    "normal_mode"]
-S-left  = ["select_mode", "extend_char_left",  "normal_mode"]
-S-right = ["select_mode", "extend_char_right", "normal_mode"]
+S-down  = "extend_line_down"
+S-up    = "extend_line_up"
+S-left  = "extend_char_left"
+S-right = "extend_char_right"
 
 # Paste via clipboard as the default.
 y = ["yank", "yank_joined_to_clipboard"]
