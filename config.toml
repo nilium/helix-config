@@ -74,7 +74,7 @@ E = ["select_mode", "goto_last_line", "goto_line_end", "normal_mode"]
 
 # Reflows.
 [keys.normal.g.q]
-q = [":reflow 72"]
+q = [":reflow"]
 p = [":reflow 80"]
 P = [":reflow 100"]
 
