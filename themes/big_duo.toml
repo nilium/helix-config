@@ -62,6 +62,7 @@
 "ui.text.focus" = { fg = "cyan" }
 "ui.virtual.ruler" = { bg = "background_ui" }
 "ui.virtual.whitespace" = { fg = "yellow" }
+"ui.virtual.inlay-hint" = { fg = "inlay_hint" }
 "ui.window" = { fg = "yellow" }
 
 # Diagnostics (gutter).
@@ -95,3 +96,4 @@ red = "#fa7980"
 violet_bright = "#d0bdfe"
 yellow = "#f5d852"
 yellow_dull = "#a3a56e"
+inlay_hint = "#76868a"

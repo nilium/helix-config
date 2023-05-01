@@ -10,6 +10,9 @@ bufferline = "multiple"
 # Requires https://github.com/helix-editor/helix/pull/5435
 # newline-at-eof = true
 
+[editor.lsp]
+display-inlay-hints = true
+
 [editor.cursor-shape]
 insert = "bar"
 
@@ -25,6 +28,12 @@ S-down  = "extend_line_down"
 S-up    = "extend_line_up"
 S-left  = "extend_char_left"
 S-right = "extend_char_right"
+
+C-a = "goto_first_nonwhitespace"
+C-e = "goto_line_end"
+
+C-n = "increment"
+C-m = "decrement"
 
 # Paste via clipboard as the default.
 y = ["yank", "yank_joined_to_clipboard"]
@@ -57,6 +66,9 @@ A-h = "rotate_selection_contents_backward"
 A-right = "rotate_selection_contents_forward"
 A-left = "rotate_selection_contents_backward"
 
+[keys.normal.space]
+q = ":buffer-close"
+
 [keys.normal.g]
 # Jump paragraphs.
 k = "goto_prev_paragraph"
@@ -88,6 +100,8 @@ C-s = "no_op"
 [keys.select]
 "}" = "goto_next_paragraph"
 "{" = "goto_prev_paragraph"
+C-a = "goto_line_start"
+C-e = "goto_line_end"
 
 # Account for C-s used by tmux.
 [keys.insert]
