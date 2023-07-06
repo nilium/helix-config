@@ -33,7 +33,7 @@ C-a = "goto_first_nonwhitespace"
 C-e = "goto_line_end"
 
 C-n = "increment"
-C-m = "decrement"
+A-n = "decrement"
 
 # Paste via clipboard as the default.
 y = ["yank", "yank_joined_to_clipboard"]
