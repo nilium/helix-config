@@ -1,21 +1,21 @@
-[[language]]
-name = "go"
-indent = { tab-width = 8, unit = "\t" }
-text-width = 80
-
-[language.config]
-[language.config.source]
+[language-server.gopls.config]
+[language-server.gopls.config.source]
 organizeImports = true
 
-[langauge.config.ui.diagnostic]
+[langauge-server.gopls.config.ui.diagnostic]
 staticcheck = true
 
-[language.config.hints]
+[language-server.gopls.config.hints]
 compositeLiteralFields = true
 compositeLiteralTypes = true
 assignVariableTypes = true
 parameterNames = true
 rangeVariableTypes = true
+
+[[language]]
+name = "go"
+indent = { tab-width = 8, unit = "\t" }
+text-width = 80
 
 [[language]]
 name = "gomod"
@@ -34,3 +34,7 @@ indent = { tab-width = 4, unit = "    " }
 name = "git-rebase"
 comment-token = ";"
 indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "python"
+auto-format = true
